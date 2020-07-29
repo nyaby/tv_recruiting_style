@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <script src="../js/my_jquery.js"></script>
+    
+  <!-- カレンダー -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- 日本語化 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>
+
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="headerIn">
+      <ul id="spnavi">
+        <li id="drop_menu_icon">
+          <img src="..\img\icon.png" alt="img\icon.png">
+        </li>
+        <!-- <li id="drop_menu_text">
+          メニュー
+        </li> -->
+        <ul id="drop_menu_hidden">
+          <li><a href="../index.html">トップページ</a></li>
+          <li><a href="faq">よくある質問</a></li>
+          <li><a href="ban">禁止事項</a></li>
+          <li><a href="contact">お問い合わせ</a></li>
+          <li><a href="contact corpo">お問い合わせ（法人様専用）</a></li>
+        </ul>
+      </ul>
+
+      <div class="myPage">
+        <img src="..\img\mypage.png" alt="mypage.png">
+        <a href="#" class="myPage_text">マイページ</a>
+      </div>
+      <div class="pc">
+        <a href="#" class="pc_text">トップページ</a>
+        <a href="#" class="pc_text">よくある質問</p>
+        <a href="#" class="pc_text">禁止事項</a>
+        <a href="#" class="pc_text">お問い合わせ</a>
+        <a href="#" class="pc_text-houjin">お問い合わせ<br><span class="regular">(法人様専用)</span></a>
+        <a href="#" class="pc_text-white">マイページ</a>
+        <a href="#" class="pc_text-white">新規会員登録</a>
+          </div>
+        </div>
+  </header>
+      <div class="welcome">
+        <h1 class="welcome_top">TV観覧・番組参加大募集！<br><span class="small">サンプルサイトへようこそ!</h1></span>
+        <div class="welcome_center">
+          <a href="#" class="welcome_center_text">新規会員登録はこちら</a>
+        </div>
+      </div>
+      
+    </body>
+    
+    <div class="main">
+      <div class="main_title">
+        <h2 class="main_title_top"><img src="..\img\TV.png" alt="TV.png" class="main_title_logo">番組観覧募集</h2>
+        <p>日付またはジャンルから一覧表示できます。</p>
+      </div>
+      <div class="selectBox">
+        <div class="pulldownset">
+          <!-- ここにタイトルを入力 -->
+          <select class="mainselect">
+             <option value="">月を選択してください</option>
+             <option value="internet">1</option>
+             <option value="program">2</option>
+             <option value="software">3</option>
+             <option value="aahome">4</option>
+             <option value="aahome">5</option>
+             <option value="aahome">6</option>
+             <option value="aahome">7</option>
+             <option value="aahome">8</option>
+             <option value="aahome">9</option>
+             <option value="aahome">10</option>
+             <option value="aahome">11</option>
+             <option value="aahome">12</option>
+          </select>
+          <select id="internet" class="subbox" onchange="location.href=this.value;">
+            <option value="">日を選択してください</option>
+            <option value="https:">1</option>
+            <option value="https:/">2</option>
+            <option value="https:">4</option>
+            <option value="https:">5</option>
+            <option value="https:">6</option>
+            <option value="https:">7</option>
+            <option value="https://">8</option>
+            <option value="https:">9</option>
+            <option value="https:">10</option>
+            <option value="https:">11</option>
+            <option value="https://">12</option>
+            <option value="https://">13</option>
+            <option value="https://">14</option>
+            <option value="https://">15</option>
+            <option value="https://">16</option>
+            <option value="https://">17</option>
+            <option value="https://">19</option>
+            <option value="https://">20</option>
+            <option value="https:">21</option>
+            <option value="https:">22</option>
+            <option value="https:">23</option>
+            <option value="https:">24</option>
+            <option value="https:">25</option>
+            <option value="https:">26</option>
+            <option value="https:">27</option>
+            <option value="https:">28</option>
+            <option value="https:">29</option>
+            <option value="https:">30</option>
+            <option value="https:">31</option>
+         </select>
+        <form>
+          <select onChange="location.href=value;">
+            <option value="page2.html">CM</option>
+            <option value="viewing.html">すべてのジャンル</option>
+            <option value="page1">音楽</option>
+             <option value="page3.html">スポーツ</option>
+             <option value="page4.html">新番組</option>
+             <option value="page5.html">バラエティ</option>
+             <option value="page6.html">スペシャル</option>
+          </select>
+       </form>
+       <p class="panel_text">〇〇テレビ 君のお茶～エキストラ募集～【東北エリア限定募集】<span class="day">8/1</span></p>
+      </div>
+      
+      <div class="area-outer area-panel">
+        
+        <ul class="tab-wrap">
+          <li class="tab">番組参加</li>
+          <li class="tab">番組観覧</li>
+          <li class="tab">その他の募集</li>
+          <li class="tab">収録場所一覧</li>
+        </ul>
+        
+        <div class="categoryBox">
+          <div class="calender">
+           <div id="datepicker"> </div>
+          </div>
+        </div>
+        
+        <div class="box-outer box-panel">
+          
+        <div class="panel is-active">
+          <div class="area-inner area-panel">
+            <p class="cate">番組参加</p>
+  
+            <ul class="tab-wrap">
+              <li class="tab sub">すべてのジャンル</li>
+              <li class="tab sub">音楽</li>
+              <li class="tab sub">ＣＭ</li>
+              <li class="tab sub">スポーツ</li>
+              <li class="tab sub">新番組</li>
+              <li class="tab sub">バラエティ</li>
+              <li class="tab sub">スペシャル</li>
+            </ul>
+  
+            <div class="box-inner box-panel">
+              
+              <div class="panel is-active">
+                <p class="panel_text">〇〇テレビ 生放送お笑いグランプリ～スタジオ生観覧募集～【関西エリア限定募集】</p>
+                <p class="panel_text" class="panel_text">〇〇テレビ ＭＵＳＩＣサマー～スタジオ生観覧募集～【関東エリア限定募集】</p>
+                <p class="panel_text" class="panel_text">〇〇テレビ 君のお茶～エキストラ募集～【東北エリア限定募集】</p>
+                <p class="panel_text" class="panel_text">〇〇テレビ 野球の神様～エキストラ募集～【東北エリア限定募集】</p>
+                <div class="content">
+                  <p class="panel_text" class="panel_text">〇〇テレビ ナイスバルクＴＶ～エキストラ募集～【東北エリア限定募集】</p>
+                  <p class="panel_text" class="panel_text">〇〇テレビ エキサイトNIGHTS～エキストラ募集～【東北エリア限定募集】</p>  
+                  <p class="panel_text" class="panel_text">〇〇テレビ EXTRABURST～エキストラ募集～【東北エリア限定募集】</p>
+                  <p class="button">もっと見る</p>
+                </div>
+              </div>
+  
+              <div class="panel">
+                <p class="panel_text">〇〇テレビ ＭＵＳＩＣサマー～スタジオ生観覧募集～【関東エリア限定募集】</p>
+              </div>
+  
+              <div class="panel">
+                <p class="panel_text">〇〇テレビ 君のお茶～エキストラ募集～【東北エリア限定募集】</p>
+              </div>
+              <div class="panel">
+                <p class="panel_text">〇〇テレビ 野球の神様～エキストラ募集～【東北エリア限定募集】</p>
+              </div>
+              <div class="panel">
+                <p class="panel_text">〇〇テレビ ナイスバルクＴＶ～エキストラ募集～【東北エリア限定募集】</p>
+              </div>
+              <div class="panel">
+              <p class="panel_text">〇〇テレビ エキサイトNIGHTS～エキストラ募集～【東北エリア限定募集】</p>  
+              </div>
+              <div class="panel">
+                <p class="panel_text">〇〇テレビ EXTRABURST～エキストラ募集～【東北エリア限定募集】</p>
+              </div>
+            </div>
+            
+          </div>
+  
+        </div>
+  
+        <div class="panel">
+          
+          <div class="area-inner area-panel">
+            <p class="cate">番組観覧</p>
+            <ul class="tab-wrap">
+              <li class="tab sub">すべてのジャンル</li>
+              <li class="tab sub">音楽</li>
+              <li class="tab sub">ＣＭ</li>
+              <li class="tab sub">スポーツ</li>
+              <li class="tab sub">新番組</li>
+              <li class="tab sub">バラエティ</li>
+              <li class="tab sub">スペシャル</li>
+            </ul>
+  
+            <div class="box-inner box-panel">
+              <div class="panel is-active">
+                <p class="panel_text">〇〇テレビ 生放送お笑いグランプリ～スタジオ生観覧募集～【関西エリア限定募集】</p>
+              </div>
+              <div class="panel">2-2</div>
+              <div class="panel">2-3</div>
+              <div class="panel">2-4</div>
+              <div class="panel">2-5</div>
+              <div class="panel">2-6</div>
+              <div class="panel">2-7</div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="panel">
+  
+          <div class="area-inner area-panel">
+            <p class="cate">その他の募集</p>
+            <ul class="tab-wrap">
+              <li class="tab sub">すべてのジャンル</li>
+              <li class="tab sub">音楽</li>
+              <li class="tab sub">ＣＭ</li>
+              <li class="tab sub">スポーツ</li>
+              <li class="tab sub">新番組</li>
+              <li class="tab sub">バラエティ</li>
+              <li class="tab sub">スペシャル</li>
+            </ul>
+  
+            <div class="box-inner box-panel">
+              <div class="panel is-active">3-1</div>
+              <div class="panel">3-2</div>
+              <div class="panel">3-3</div>
+              <div class="panel">3-4</div>
+              <div class="panel">3-5</div>
+              <div class="panel">3-6</div>
+              <div class="panel">3-7</div>
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <div class="panel">
+  
+          <div class="area-inner area-panel">
+            <p class="cate">収録場所一覧</p>
+            <ul class="tab-wrap">
+              <li class="tab sub">すべてのジャンル</li>
+              <li class="tab sub">音楽</li>
+              <li class="tab sub">ＣＭ</li>
+              <li class="tab sub">スポーツ</li>
+              <li class="tab sub">新番組</li>
+              <li class="tab sub">バラエティ</li>
+              <li class="tab sub">スペシャル</li>
+            </ul>
+  
+            <div class="box-inner box-panel">
+              <div class="panel is-active">4-1</div>
+              <div class="panel">4-2</div>
+              <div class="panel">4-3</div>
+              <div class="panel">4-4</div>
+              <div class="panel">4-5</div>
+              <div class="panel">4-6</div>
+              <div class="panel">4-7</div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <div class="footer">
+    <div class="imgFlex">
+      <div class="imgBox">
+        <img src="..\img/king.png" alt="img/king.png" class="tvlogo">
+      </div>
+      <div class="imgBox">
+        <img src="..\img/home.png" alt="img/home.png" class="tvlogo">
+      </div>
+      <div class="imgBox">
+        <img src="..\img/plane.png" alt="img/plane.png" class="tvlogo">
+      </div>
+      <div class="imgBox">
+        <img src="..\img\place.png" alt="img\place.png" class="tvlogo">
+      </div>
+      <div class="imgBox">
+        <img src="..\img\present.png" alt="img\present.png" class="tvlogo">
+      </div>
+      <div class="imgBox">
+        <img src="..\img\car.jpeg" alt="img\car.jpeg" class="tvlogo">
+      </div>
+    </div>
+    <div class="footerBox">
+      <div class="privacy">
+        <img src="..\img\key.png" alt="img\key.png" class="privacyLogo">
+        <div class="privacy_textBox">
+          <p class="privacyText">当社は適切な個人情報の適切な取り扱いを行う、事業所にのみ許可される「プライバシーマーク」の付与認定を受けています。</p>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_bottom-top">
+          <a href="#" class="footer_bottom-text">採用情報</a>
+          <a href="#" class="footer_bottom-text">お問い合わせ</a>
+        </div>
+        <div class="footer_bottom-center">
+          <a href="#" class="footer_bottom-text">会員規約</a>
+          <a href="#" class="footer_bottom-text">個人情報保護について</a>
+        </div>
+        <div class="footer_bottom-bottom">
+          <a href="#" class="footer_bottom-text">運営会社</a>
+        </div>
+      </div>
+    </div>
+      <div class="Copyright">
+        <p>Copyright(c) All rights reserved.</p>
+      </div>
+  </div>
+
+  <script type="text/javascript" src="js/my_script.js"></script>
+</body>
+</html>
